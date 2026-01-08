@@ -33,7 +33,17 @@
             selectedBlueprint: null,
 
             // Current dataset being configured
-            currentDataset: {},
+            currentDataset: {
+                parquet: {
+                    path: '',
+                    filename_column: 'id',
+                    caption_column: 'caption',
+                    width_column: '',
+                    height_column: '',
+                    fallback_caption_column: '',
+                    identifier_includes_extension: false
+                }
+            },
             datasetQueue: [],
             editingQueuedDataset: false,
             editingIndex: -1,
