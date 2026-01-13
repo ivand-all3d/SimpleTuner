@@ -1,0 +1,26 @@
+[
+  {
+    "id": "edit-target",
+    "dataset_type": "image",
+    "type": "local",
+    "instance_data_dir": "/root/data/all3d-silo-scene-1200/outputs",
+    "caption_strategy": "textfile",
+    "conditioning_data": ["edit-source"],
+    "cache_dir_vae": "/root/cache/vae/qwen-image/target"
+  },
+  {
+    "id": "edit-source",
+    "dataset_type": "conditioning",
+    "conditioning_type": "reference_strict",
+    "type": "local",
+    "instance_data_dir": "/root/data/all3d-silo-scene-1200/inputs",
+    "cache_dir_vae": "/root/cache/vae/qwen-image/source"
+  },
+  {
+    "id": "text-embeds",
+    "dataset_type": "text_embeds",
+    "type": "local",
+    "default": true,
+    "cache_dir": "/root/cache/text/qwen-image"
+  }
+]

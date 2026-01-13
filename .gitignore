@@ -5,7 +5,6 @@ output/
 temp/
 env.sh
 *.pem
-*/config/config.json
 user_prompt_library.json
 __pycache__/
 .venv/
@@ -51,8 +50,6 @@ work
 multidatabackend.json
 multidatabackend_sd2x.json
 
-config/*.json
-config/*.env
 wandb/
 cache/
 vae_cache/
@@ -60,8 +57,6 @@ vendor/
 inference/
 webhooks.json
 untracked/
-config/*/
-config/*.toml
 api_state.json
 images/
 datasets/
@@ -77,4 +72,3 @@ test-screenshots/
 test-folder/
 node_modules
 package-lock.json
-**/config
